@@ -30,8 +30,8 @@ public class Main {
 
 				try (ResultSet rs = ps.executeQuery()) {
 					while (rs.next()) {
-						System.out.print(rs.getString(1) + " - ");
 						System.out.print(rs.getInt(2) + " - ");
+						System.out.print(rs.getString(1) + " - ");
 						System.out.print(rs.getString(3) + " - ");
 						System.out.println(rs.getString(4));
 					}
